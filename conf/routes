@@ -1,0 +1,22 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+POST    /resource/user  controllers.UserController.create
+GET     /resource/user  controllers.UserController.fetch
+
+POST    /resource/user2  controllers.UserController2.create
+GET    /resource/user2  controllers.UserController2.fetch
+
+POST    /resource/user3  controllers.UserController3.create
+GET    /resource/user3  controllers.UserController3.fetch
+
+POST    /resource/user4  controllers.UserController4.create
+GET    /resource/user4  controllers.UserController4.fetch
+
+POST    /resource/user5  controllers.UserController5.create
+GET    /resource/user5  controllers.UserController5.fetch
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.at(path="/public", file)
